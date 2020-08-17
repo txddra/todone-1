@@ -3,7 +3,7 @@
 // Write each function below its comment and you'll be doing pretty well.  The printTodo function has been begun for you so that we can drill down in the comments on its individual steps. Add the code for each part below its comment as well.
 // Doing our code under its pre-written comment in this way will self-document your code and, more importantly, make it easier to follow along with the assignment!
 
-// Remember that each function below is a helper function or an event listener function that runs when the user interacts with our page. So we should NOT be calling any functions or doing anythinmg in the global scope. Just functions functions functions!
+// Remember that each function below is a helper function or an event listener function that runs when the user interacts with our page. So we should NOT be calling any functions or doing anything in the global scope. Just functions functions functions!
 // (With one big exception, which you'll see in the comments when we get there.)
 
 // And now: code away.
@@ -17,6 +17,8 @@
 const printTodo = function(todo) {
   // Use `document.createElement` to make an <li>, and set its text (preferably using `.innerText`) to be our given object's text field.
 
+const listItem = document.createElement('li');
+listItem.innerText = todo.text 
 
 
   // Query the ol and put it in a variable.
