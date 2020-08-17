@@ -27,7 +27,7 @@ const orderedList = document.querySelector('.todo-list')
 
   // Append the li we made to the ul as the last child using `.appendChild`. If this isn't working for you, check what is being appended to what!
 
-
+orderedList.appendChild(listItem)
 
   // Give our new li a `todo-item` class using `classList`.
 
