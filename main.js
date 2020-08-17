@@ -23,7 +23,7 @@ listItem.innerText = todo.text
 
   // Query the ol and put it in a variable.
 
-
+const orderedList = document.querySelector('.todo-list')
 
   // Append the li we made to the ul as the last child using `.appendChild`. If this isn't working for you, check what is being appended to what!
 
