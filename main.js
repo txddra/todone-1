@@ -49,6 +49,7 @@ listItem.id = todo.id
   // You'll want to add an event listener to the `li` you just made, and in that event listener function, toggle its completeness on both the DOM (using `classList.toggle`) and in our global array (toggling its completeness property).
   // The hard part will be finding it on the DOM and finding it in our array. We can tell what `li` was clicked using the `event` property passed in, and we can tell what object it goes to using the node element's id that we added above.
 
+  li.id = todo.id.toString();
 
 }
 
@@ -60,12 +61,12 @@ for (const todo of todos) {
 }
 }
 
-printTodos(todos);
+
 
 // Call the above function immediately after you define it, so our todos array gets printed out on page load. This is the only time we're calling a function, the rest is event listeners and helper functions that run when the user interacts with the DOM!
 
 
-
+printTodos(todos);
 
 // Clear all todos from the DOM. This is a great helper function for refreshing our todos.
 // Test it in the console and see if your lis disappear!
