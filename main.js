@@ -30,18 +30,20 @@ const orderedList = document.querySelector('.todo-list')
 orderedList.appendChild(listItem)
 
   // Give our new li a `todo-item` class using `classList`.
-
+  //???
+listItem.classList.add('todo-item')
 
 
   // Give our new li an id that is the object's id. This is so that we have a matching relationship between todo node elements and their corresponding objects.
-
+listItem.id = todo.id
 
 
   // Give the li a `complete` class if the todo object indicates it was complete already.
-
-
-
-  // Give the <p> with the todo's text in it an event listener
+//implies if statement on completeness
+  if (todo.complete) {
+    li.classList.add('complete')
+  }
+  // Give the <p> with the todo's text in it an event listener???
   // to toggle that todo's completeness.
   // This is quite a challenge, so feel free to come back to this one at the end!
   // You'll want to add an event listener to the `li` you just made, and in that event listener function, toggle its completeness on both the DOM (using `classList.toggle`) and in our global array (toggling its completeness property).
@@ -52,8 +54,13 @@ orderedList.appendChild(listItem)
 
 
 // Print all todos. Loop through our todos array and call the above function on each one.
+const printTodos = function(todos){
+for (const todo of todos) {
+  printTodo(todo);
+}
+}
 
-
+printTodos(todos);
 
 // Call the above function immediately after you define it, so our todos array gets printed out on page load. This is the only time we're calling a function, the rest is event listeners and helper functions that run when the user interacts with the DOM!
 
