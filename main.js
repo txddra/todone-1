@@ -11,7 +11,9 @@
 
 
 // Given a todo object, adds an item to our todo list.
-
+const addTodo = function(todo){
+todos.push(todo);
+}
 
 // Given a todo object, put it on the DOM. This is a pretty big function!
 const printTodo = function(todo) {
@@ -66,7 +68,7 @@ for (const todo of todos) {
 // Call the above function immediately after you define it, so our todos array gets printed out on page load. This is the only time we're calling a function, the rest is event listeners and helper functions that run when the user interacts with the DOM!
 
 
-printTodos(todos);
+printTodos();
 
 // Clear all todos from the DOM. This is a great helper function for refreshing our todos.
 // Test it in the console and see if your lis disappear!
